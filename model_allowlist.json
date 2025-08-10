@@ -53,6 +53,40 @@
       },
       "taskTypes": ["llm_chat", "llm_prompt_lab"]
     },
+        {
+      "name": "Gemma3-4B-IT q4",
+      "modelId": "litert-community/Gemma3-4B-IT",
+      "modelFile": "gemma3-4b-it-int4-web.task",
+      "description": "A variant of [google/Gemma-3-4B-IT](https://huggingface.co/google/Gemma-3-4B-IT) with 4-bit quantization ready for deployment on Android using the [MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference)",
+      "sizeInBytes": 2560000000,
+      "estimatedPeakMemoryInBytes": 2147483648,
+      "version": "20250514",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 4096,
+        "accelerators": "gpu,cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"]
+    },
+            {
+      "name": "Llama-3.2-3B-Instruct int 8",
+      "modelId": "litert-community/Llama-3.2-3B-Instruct",
+      "modelFile": "Llama-3.2-3B-Instruct_multi-prefill-seq_q8_ekv1280.task",
+      "description": "A variant of Llama 3.2 3B Instruct with 8-bit quantization ready for deployment on Android using the [MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference)",
+      "sizeInBytes": 3400000000,
+      "estimatedPeakMemoryInBytes": 2147483648,
+      "version": "20250514",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 4096,
+        "accelerators": "gpu,cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"]
+    },
     {
       "name": "Qwen2.5-1.5B-Instruct q8",
       "modelId": "litert-community/Qwen2.5-1.5B-Instruct",
